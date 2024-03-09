@@ -15,9 +15,9 @@ The Hogsmeade Train Station management system simplifies the handling of trains 
 | `leave_train`                      | **Removes** *the train* from a specified **platform**, clearing all **train cars** and **locomotive power**. |
 | `add_train_car`                    | **Attaches** *a train car* with a given **weight** to the train at the specified **platform**. |
 | `remove_train_cars`                | **Detaches** *all train cars* matching a specified **weight** from the train situated at the designated **platform**, ensuring selective unloading. |
-| `fix_overload_train`               | **Adjusts** *an overloaded train* by removing carriages to *balance the weight with the locomotive power*. |
-| `order_train`                      | **Sorts** *the train* cars at a specified platform in *descending order by weight*. |
 | `move_train_cars`                  | **Relocates** *a number of train cars* from one train to another within the station, from and to specified platforms and positions. |
+| `order_train`                      | **Sorts** *the train* cars at a specified platform in *descending order by weight*. |
+| `fix_overload_train`               | **Adjusts** *an overloaded train* by removing carriages to *balance the weight with the locomotive power*. |
 | `find_express_train`               | **Searches** for *the train* with the highest power-to-weight ratio, indicating a fast, express train, and returns its **platform number**. |
 | `find_overload_train`              | **Identifies** *any train* that is too heavy to move and returns the **platform number**, or **-1** if none are overloaded. |
 | `find_optimal_train`               | **Locates** *the train* with the most efficient balance of locomotive power to carriage weight, returning the **platform number**. |
@@ -39,6 +39,10 @@ The `Makefile` provided will compile the source files and link them with the nec
 
 To execute the **train-station** program and perform the associated tests, the `run.sh` script provides an automated approach. It sets up the environment, builds the program, and runs the test suite.
 
+Upon completion, the script prints a report for each test case, indicating a **pass/fail** status. This comprehensive output helps you to verify the implementation and integrity of the program.
+
+Compares the program's output against expected results found in the `result/reference` directory.
+
 To run the project using the `run.sh` script, follow these steps:
 
 1. Navigate to the root directory of the project where the `run.sh` script is located.
@@ -52,7 +56,3 @@ The script performs the following steps:
 ```bash
 valgrind --leak-check=full --error-exitcode=1 ./result/bin/hogesmade
 ```
-
-- Compares the program's output against expected results found in the `result/reference` directory.
-
-Upon completion, the script prints a report for each test case, indicating a **pass/fail** status. This comprehensive output helps you to verify the implementation and integrity of the program.
