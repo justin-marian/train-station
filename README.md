@@ -8,20 +8,20 @@ The Hogsmeade Train Station management system simplifies the handling of trains 
 
 | **Function**                       | **Description** |
 |:-----------------------------------|:----------------|
-| `arrive_train`                     | Adds a train to the station at a specified platform with given locomotive power. Replaces existing locomotive power if present. |
-| `leave_train`                      | Removes the train from a specified platform, clearing all train cars and locomotive power. |
-| `add_train_car`                    | Attaches a train car with a given weight to the train at the specified platform. |
-| `remove_train_cars`                | Detaches all train cars with a specified weight from the train at the given platform. |
-| `move_train_cars`                  | Relocates a number of train cars from one train to another within the station, from and to specified platforms and positions. |
-| `find_express_train`               | Searches for the train with the highest power-to-weight ratio, indicating a fast, express train, and returns its platform number. |
-| `find_overload_train`              | Identifies any train that is too heavy to move and returns the platform number, or -1 if none are overloaded. |
-| `find_optimal_train`               | Locates the train with the most efficient balance of locomotive power to carriage weight, returning the platform number. |
-| `find_heaviest_sequence_train`     | Finds the train with the heaviest consecutive sequence of carriages based on a specified number and returns the platform number and the start of the sequence. |
-| `order_train`                      | Sorts the train cars at a specified platform in descending order by weight. |
-| `fix_overload_train`               | Adjusts an overloaded train by removing carriages to balance the weight with the locomotive power. |
-| `open_train_station`               | Initializes a train station with a set number of platforms. |
-| `close_train_station`              | Cleans up the train station, releasing all associated memory. |
-| `show_existing_trains`             | Outputs the details of all trains at the station, including platform number, locomotive power, and carriage weights. |
+| `open_train_station`               | **Initializes** *a train station* with a set **number** of platforms. |
+| `close_train_station`              | **Cleans up** *the train station*, releasing **all** associated memory. |
+| `show_existing_trains`             | **Outputs** *the details of all trains* at the station, including **platform number**, **locomotive power**, and **carriage weights**. |
+| `arrive_train`                     | **Adds** *a train* to the station at a specified **platform** with given **locomotive power**. Replaces existing locomotive power if present. |
+| `leave_train`                      | **Removes** *the train* from a specified **platform**, clearing all **train cars** and **locomotive power**. |
+| `add_train_car`                    | **Attaches** *a train car* with a given **weight** to the train at the specified **platform**. |
+| `remove_train_cars`                | **Detaches** *all train cars* matching a specified **weight** from the train situated at the designated **platform**, ensuring selective unloading. |
+| `fix_overload_train`               | **Adjusts** *an overloaded train* by removing carriages to *balance the weight with the locomotive power*. |
+| `order_train`                      | **Sorts** *the train* cars at a specified platform in *descending order by weight*. |
+| `move_train_cars`                  | **Relocates** *a number of train cars* from one train to another within the station, from and to specified platforms and positions. |
+| `find_express_train`               | **Searches** for *the train* with the highest power-to-weight ratio, indicating a fast, express train, and returns its **platform number**. |
+| `find_overload_train`              | **Identifies** *any train* that is too heavy to move and returns the **platform number**, or **-1** if none are overloaded. |
+| `find_optimal_train`               | **Locates** *the train* with the most efficient balance of locomotive power to carriage weight, returning the **platform number**. |
+| `find_heaviest_sequence_train`     | **Finds** *the train* with the heaviest consecutive sequence of carriages based on a specified **number** and returns **the platform number** and the start of the sequence. |
 
 ## Build the Project
 
@@ -55,4 +55,4 @@ valgrind --leak-check=full --error-exitcode=1 ./result/bin/hogesmade
 
 - Compares the program's output against expected results found in the `result/reference` directory.
 
-Upon completion, the script prints a report for each test case, indicating a pass or fail status. This comprehensive output helps you to verify the implementation and integrity of the program.
+Upon completion, the script prints a report for each test case, indicating a **pass/fail** status. This comprehensive output helps you to verify the implementation and integrity of the program.
