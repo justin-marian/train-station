@@ -7,7 +7,7 @@ The *Hogsmeade* **Train Station** management system streamlines train and carria
 **Linked lists** also facilitate *optimal arrangement of carriages*, *enhancing overall performance*. With its straightforward approach, the system simplifies train station management.
 
 | Structure    | Description                                                   |
-|--------------|---------------------------------------------------------------|
+|:------------:|---------------------------------------------------------------|
 | `TrainStation` | **number of platforms** in the train station and a **list of platforms**, each possibly with an associated train. |
 | `Train`      | **locomotive power** and a **pointer to the first train car** in the sequence of attached cars. |
 | `TrainCar`   | **weight** of the train car and **pointer to the next train car** in the sequence. |
