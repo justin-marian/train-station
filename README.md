@@ -2,7 +2,17 @@
 
 ## Description
 
-The Hogsmeade Train Station management system simplifies the handling of trains and carriages at the station. It utilizes **straightforward linked lists** to organize the carriages of each train. Simple linked lists enable the system to swiftly locate trains with specific traits, such as being the fastest or having an excess of carriages. Additionally, they facilitate the efficient arrangement of carriages, optimizing overall performance.
+The *Hogsmeade* **Train Station** management system streamlines train and carriage operations at the station. It leverages efficient **linked lists** to organize train carriages, enabling quick identification of trains with specific characteristics, such as power or excess carriages.
+
+**Linked lists** also facilitate *optimal arrangement of carriages*, *enhancing overall performance. With its straightforward approach, the system simplifies train station management, ensuring smooth operations and efficient resource allocation.
+
+| Structure    | Description                                                   |
+|--------------|---------------------------------------------------------------|
+| `TrainStation` | **number of platforms** in the train station and a **list of platforms**, each possibly with an associated train. |
+| `Train`      | **locomotive power** and a **pointer to the first train car** in the sequence of attached cars. |
+| `TrainCar`   | **weight** of the train car and **pointer to the next train car** in the sequence. |
+
+These structures allow for the representation of a train station with multiple platforms, each platform having a train with a specific locomotive power and a sequence of train cars attached to it. The use of linked lists for the train cars enables efficient arrangement and manipulation of the train cars.
 
 ## Operations
 
@@ -41,8 +51,8 @@ To execute the **train-station** program and perform the associated tests, the `
 
 To run the project using the `run.sh` script, follow these steps:
 
-1. Navigate to the root directory of the project where the `run.sh` script is located.
-2. Execute the script by typing `./run.sh`. You may need to grant execution permissions to the script using `chmod +x run.sh` if it is not already executable.
+- Navigate to the root directory of the project where the `run.sh` script is located.
+- Execute the script by typing `./run.sh`. You may need to grant execution permissions to the script using `chmod +x run.sh` (*if it is not already executable*).
 
 The script performs the following steps:
 
