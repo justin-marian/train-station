@@ -53,6 +53,4 @@ The script performs the following steps:
     valgrind --leak-check=full --error-exitcode=1 ./result/bin/hogesmade
 ```
 
-Upon completion, the script prints **a report** for each *test case*, indicating a **pass/fail** status. This comprehensive output helps you to verify the implementation and integrity of the program.
-
-Compares the program's output against expected results found in the `result/reference` directory.
+Upon completion, the script prints **a report** for each *test case*, indicating a **pass/fail** status. This comprehensive output helps you to verify the implementation and integrity of the program. Compares the program's output against expected results found in the `result/reference` directory.
