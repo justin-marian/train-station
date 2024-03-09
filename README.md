@@ -39,10 +39,6 @@ The `Makefile` provided will compile the source files and link them with the nec
 
 To execute the **train-station** program and perform the associated tests, the `run.sh` script provides an automated approach. It sets up the environment, builds the program, and runs the test suite.
 
-Upon completion, the script prints a report for each test case, indicating a **pass/fail** status. This comprehensive output helps you to verify the implementation and integrity of the program.
-
-Compares the program's output against expected results found in the `result/reference` directory.
-
 To run the project using the `run.sh` script, follow these steps:
 
 1. Navigate to the root directory of the project where the `run.sh` script is located.
@@ -54,5 +50,9 @@ The script performs the following steps:
 - Executes the **train-station** program within Valgrind to detect memory leaks:
 
 ```bash
-valgrind --leak-check=full --error-exitcode=1 ./result/bin/hogesmade
+    valgrind --leak-check=full --error-exitcode=1 ./result/bin/hogesmade
 ```
+
+Upon completion, the script prints **a report** for each *test case*, indicating a **pass/fail** status. This comprehensive output helps you to verify the implementation and integrity of the program.
+
+Compares the program's output against expected results found in the `result/reference` directory.
