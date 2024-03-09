@@ -29,8 +29,8 @@
 *.dylib
 
 # Executables
+# *.out
 *.exe
-*.out
 *.app
 *.i*86
 *.x86_64
@@ -50,3 +50,7 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# Other files and directories
+*.vscode/
+*.pdf
