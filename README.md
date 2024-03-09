@@ -30,7 +30,7 @@ These structures allow for the representation of a train station with multiple p
 | `move_train_cars`                  | **Relocates** *a number of train cars* from one train to another within the station, from and to specified platforms and positions. |
 | `order_train`                      | **Sorts** *the train* cars at a specified platform in *descending order by weight*. |
 | `fix_overload_train`               | **Adjusts** *an overloaded train* by removing carriages to *balance the weight with the locomotive power*. |
-| `find_express_train`               | **Searches** for *the train* with the highest power-to-weight ratio, indicating a fast, express train, and returns its **platform number**. |
+| `find_express_train`               | **Searches** for *the train* with the highest power-to-weight difference, indicating a fast, express train, and returns its **platform number**. |
 | `find_overload_train`              | **Identifies** *any train* that is too heavy to move and returns the **platform number**, or **-1** if none are overloaded. |
 | `find_optimal_train`               | **Locates** *the train* with the most efficient balance of locomotive power to carriage weight, returning the **platform number**. |
 | `find_heaviest_sequence_train`     | **Finds** *the train* with the heaviest consecutive sequence of carriages based on a specified **number** and returns **the platform number** and the start of the sequence. |
@@ -54,7 +54,8 @@ To execute the **train-station** program and perform the associated tests, the `
 To run the project using the `run.sh` script, follow these steps:
 
 - Navigate to the root directory of the project where the `run.sh` script is located.
-- Execute the script by typing `./run.sh`. You may need to grant execution permissions to the script using `chmod +x run.sh` (*if it is not already executable*).
+- Execute the script by typing `./run.sh`. You may need to grant execution permissions to the script using:
+  - `chmod +x run.sh` (*if it is not already executable*).
 
 The script performs the following steps:
 
